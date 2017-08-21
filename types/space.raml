@@ -1,0 +1,37 @@
+#%RAML 1.0 Library
+
+usage: Space types specifics
+
+uses:
+  product: product.raml
+
+types:
+  Space:
+    type: object
+    properties:
+      id: string
+      type: string
+      name: string
+      status: string
+      slug?: nil | string
+      title?: nil | string
+      description?: nil | string
+      content?: nil | Content
+      parent_id?: nil | string
+      created_at?: datetime
+        #type: datetime
+        #format: rfc3339
+        #example: 2016-02-28T16:41:41.090Z
+        #type: datetime
+        #format: rfc2616
+        #example: Sun, 28 Feb 2016 16:41:41 GMT
+      updated_at?: datetime
+      deleted_at?: datetime
+      published_at?: datetime
+
+  Content:
+    type: object
+  FittingRoom:
+    type: Content
+    properties:
+      items: nil | product.Product[]

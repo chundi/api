@@ -1,0 +1,67 @@
+[{
+  "id": "be126816-8632-11e7-8664-600308a19290",
+  "type": "fitting_room",
+  "name": "第一试衣间",
+  "slug": "fitting_room_1",
+  "status": "empty",
+  "title": "",
+  "description": "",
+  "content": {"items": [
+
+  ]},
+  "parent_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+  "created_at": "2016-02-28T16:41:41.090Z",
+  "updated_at": "2016-02-28T16:41:41.090Z",
+  "published_at": "2016-02-28T16:41:41.090Z",
+  "deleted_at": "2016-02-28T16:41:41.090Z"
+}, {
+  "id": "c73d688c-8632-11e7-b4d7-600308a19290",
+  "type": "fitting_room",
+  "name": "第二试衣间",
+  "slug": "fitting_room_2",
+  "status": "busy",
+  "title": "",
+  "description": "",
+  "content": {
+    "items": [{
+      "title": "2017夏季连衣裙"
+      "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg"
+      "orig_price": "800.0¥"
+      "curr_price": "580.0¥"
+      "attrs": [{
+        "name": "绿色",
+        "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+        "inventory": 5
+      },{
+        "name": "蓝色",
+        "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+        "inventory": 5
+      },{
+        "name": "紫色",
+        "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+        "inventory": 10
+      }]
+    }]
+  },
+  "parent_id": "",
+  "created_at": "2016-02-28T16:41:41.090Z",
+  "updated_at": "2016-02-28T16:41:41.090Z",
+  "published_at": "2016-02-28T16:41:41.090Z",
+  "deleted_at": "2016-02-28T16:41:41.090Z"
+},{
+  "id": "ed48b300-8633-11e7-9e67-600308a19290",
+  "type": "fitting_room",
+  "name": "第三试衣间",
+  "slug": "",
+  "status": "broken",
+  "title": "",
+  "description": "",
+  "content": {"items": [
+
+  ]},
+  "parent_id": "",
+  "created_at": "2016-02-28T16:41:41.090Z",
+  "updated_at": "2016-02-28T16:41:41.090Z",
+  "published_at": "2016-02-28T16:41:41.090Z",
+  "deleted_at": "2016-02-28T16:41:41.090Z"
+}]

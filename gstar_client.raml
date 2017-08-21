@@ -1,0 +1,43 @@
+#%RAML 1.0
+title: Galaxy-solar gstar API
+version: v1
+baseUri: http://localhost/{version}/
+mediaType: application/json
+
+uses:
+  meta: ./types/meta.raml
+  space: ./types/space.raml
+  trait: ./traits/traits.raml
+
+resourceTypes:
+  collection: !include ./resourceTypes/collection.raml
+  item: !include ./resourceTypes/item.raml
+
+/spaces:
+  displayName: space management
+  /{space_type}:
+    displayName: specific space type management
+    uriParameters:
+      space_type:
+        type: string
+        description: filter for space.type
+    type:
+      collection:
+        request-type: space.Space
+        response-type: space.Space
+        exampleCollection: !include ./examples/space_collection_simple.get.example
+        exampleItem: !include ./examples/space_item.post.example
+    get:
+      is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
+  /{space_id}:
+    uriParameters:
+      space_id: string
+    type:
+      item:
+        request-type: space.Space
+        response-type: space.Space
+        exampleItem: !include ./examples/space_item_simple.get.example
+    get:
+    /transfer:
+      displayName: call a waiter to serve the customer in the fittingroom
+      post:

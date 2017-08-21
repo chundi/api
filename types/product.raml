@@ -1,0 +1,18 @@
+#%RAML 1.0 Library
+
+usage: Space types specifics
+
+types:
+  Attr:
+    properties:
+      name: string
+      image_url: string
+      inventory: integer
+
+  Product:
+    properties:
+      title: string
+      image_url: string
+      orig_price: string
+      curr_price: string
+      attrs: Attr[]

@@ -1,0 +1,19 @@
+#%RAML 1.0 Library
+
+usage: Metas for Space/Post
+
+types:
+  Meta:
+    type: object
+    properties:
+      id: string
+  MetaComment:
+    type: Meta
+    properties:
+      comment_enabled: boolean
+      comment_count: integer
+  MetaPush:
+    type: Meta
+    properties:
+      push_type: string
+      push_token: string

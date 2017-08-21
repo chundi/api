@@ -1,0 +1,62 @@
+#%RAML 1.0 ResourceType
+
+usage: Collection item.
+
+description: Entity representing a <<resourcePathName|!singularize>>
+get:
+  description: |
+    Get the <<resourcePathName|!singularize>>
+    with <<resourcePathName|!singularize>>Id =
+    {<<resourcePathName|!singularize>>Id}
+  responses:
+    200:
+      body:
+        application/json:
+          type: <<response-type>>
+          example: |
+            <<exampleItem>>
+    404:
+      body:
+        application/json:
+          example: |
+            {"message": "<<resourcePathName|!singularize>> not found" }
+put?:
+  description: |
+    Update a <<resourcePathName|!singularize>> to Gstar.
+  queryParameters:
+    access_token:
+      description: "The access token provided by the authentication application"
+      example: AABBCCDD
+      required: true
+      type: string
+  body:
+    application/json:
+      type: <<request-type>>
+      example: |
+        <<exampleItemPut>>
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            { "message": "The <<resourcePathName|!singularize>> has been properly updated" }
+delete?:
+  description: |
+    Delete a <<resourcePathName|!singularize>> to Gstar.
+  queryParameters:
+    access_token:
+      description: "The access token provided by the authentication application"
+      example: AABBCCDD
+      required: true
+      type: string
+  body:
+    application/json:
+      type: <<request-type>>
+      example: |
+        <<exampleItemDelete>>
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            { "message": "The <<resourcePathName|!singularize>> has been properly deleted" }

@@ -1,0 +1,8 @@
+#%RAML 1.0 Trait
+usage: Apply this trait to a GET method that supports pagination.
+queryParameters:
+  filter?:
+    type: string
+    description: |
+      filter target resource by the `filter` conditions, comma-separated expressions
+    example: status=empty #rate>100,type!=fittingroom,status=empty

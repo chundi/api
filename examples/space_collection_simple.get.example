@@ -1,0 +1,25 @@
+[{
+  "id": "be126816-8632-11e7-8664-600308a19290",
+  "type": "fitting_room",
+  "name": "第一试衣间",
+  "status": "empty",
+  "content": {"items": [
+
+  ]}
+}, {
+  "id": "c73d688c-8632-11e7-b4d7-600308a19290",
+  "type": "fitting_room",
+  "name": "第二试衣间",
+  "status": "busy",
+  "content": {"items": [
+
+  ]}
+},{
+  "id": "ed48b300-8633-11e7-9e67-600308a19290",
+  "type": "fitting_room",
+  "name": "第三试衣间",
+  "status": "broken",
+  "content": {"items": [
+
+  ]}
+}]

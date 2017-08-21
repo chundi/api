@@ -1,0 +1,34 @@
+#%RAML 1.0 ResourceType
+
+usage: Apply this resource type to any resource that returns a collection of items.
+
+description: Collection of available <<resourcePathName>> in Jukebox.
+get:
+  description: Get a list of <<resourcePathName>>.
+  responses:
+    200:
+      body:
+        application/json:
+          type: <<response-type>>[]
+          example: |
+            <<exampleCollection>>
+post:
+  description: |
+    Add a new <<resourcePathName|!singularize>> to Gstar.
+  queryParameters:
+    access_token:
+      description: "The access token provided by the authentication application"
+      example: AABBCCDD
+      required: true
+      type: string
+  body:
+    application/json:
+      type: <<request-type>>
+      example: |
+        <<exampleItem>>
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            { "message": "The <<resourcePathName|!singularize>> has been properly entered" }
