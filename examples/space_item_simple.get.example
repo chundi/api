@@ -5,11 +5,11 @@
   "status": "busy",
   "content": {
     "items": [{
-      "product_id": "123123123"
-      "title": "2017夏季连衣裙"
-      "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg"
-      "orig_price": "800.0¥"
-      "curr_price": "580.0¥"
+      "product_id": "123123123",
+      "title": "2017夏季连衣裙",
+      "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+      "orig_price": "800.0¥",
+      "curr_price": "580.0¥",
       "attrs": [{
         "sku_id": "111",
         "name": "绿色|S",
@@ -47,11 +47,11 @@
         "inventory": 10
       }]
     },{
-      "product_id": "123123124"
-      "title": "2017夏季连衣裙1"
-      "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg"
-      "orig_price": "800.0¥"
-      "curr_price": "580.0¥"
+      "product_id": "123123124",
+      "title": "2017夏季连衣裙1",
+      "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+      "orig_price": "800.0¥",
+      "curr_price": "580.0¥",
       "attrs": [{
         "sku_id": "111",
         "name": "绿色|S",
@@ -89,11 +89,11 @@
         "inventory": 10
       }]
     },{
-      "product_id": "123123125"
-      "title": "2017夏季连衣裙2"
-      "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg"
-      "orig_price": "800.0¥"
-      "curr_price": "580.0¥"
+      "product_id": "123123125",
+      "title": "2017夏季连衣裙2",
+      "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+      "orig_price": "800.0¥",
+      "curr_price": "580.0¥",
       "attrs": [{
         "sku_id": "111",
         "name": "绿色|S",
