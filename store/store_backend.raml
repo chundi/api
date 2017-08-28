@@ -1,5 +1,5 @@
 #%RAML 1.0
-title: Galaxy-solar gstar API
+title: Galaxy-solar gstar Backend API
 version: v1
 baseUri: http://localhost/{version}/
 mediaType: application/json
@@ -7,7 +7,7 @@ mediaType: application/json
 uses:
   meta: ./types/meta.raml
   space: ./types/space.raml
-  trait: ./traits/traits.raml
+  trait: ../public/traits/traits.raml
 
 resourceTypes:
   collection: !include ./resourceTypes/collection.raml
@@ -29,6 +29,7 @@ resourceTypes:
         exampleItem: !include ./examples/space_item.post.example
     get:
       is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
+    post:
   /{space_id}:
     uriParameters:
       space_id: string
@@ -36,15 +37,10 @@ resourceTypes:
       item:
         request-type: space.Space
         response-type: space.Space
-        exampleItem: !include ./examples/space_item_simple.get.example
+        exampleItem: !include ./examples/space_item.get.example
+        exampleItemPut: !include ./examples/space_item.post.example
+        exampleItemDelete: !include ./examples/space_item.post.example
     get:
-    /transfer:
-      displayName: call a waiter to serve the customer in the fittingroom
-      post:
-        body:
-          application/json:
-            type: object
-            properties:
-              sku_ids:
-                type: string[]
-                description: sku identifier list
+    put:
+      description: backend update; RFID scan
+    delete:

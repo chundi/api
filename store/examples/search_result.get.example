@@ -1,0 +1,127 @@
+[{
+  "product_id": "123123123",
+  "title": "2017夏季连衣裙",
+  "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+  "orig_price": "800.0¥",
+  "curr_price": "580.0¥",
+  "attrs": [{
+    "sku_id": "111",
+    "name": "绿色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "222",
+    "name": "绿色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "333",
+    "name": "蓝色|M",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 8
+  },{
+    "sku_id": "444",
+    "name": "蓝色|L",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 10
+  },{
+    "sku_id": "555",
+    "name": "紫色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 4
+  },{
+    "sku_id": "666",
+    "name": "紫色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "777",
+    "name": "紫色|XL",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 10
+  }]
+},{
+  "product_id": "123123124",
+  "title": "2017夏季连衣裙1",
+  "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+  "orig_price": "800.0¥",
+  "curr_price": "580.0¥",
+  "attrs": [{
+    "sku_id": "111",
+    "name": "绿色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "222",
+    "name": "绿色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "333",
+    "name": "蓝色|M",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 8
+  },{
+    "sku_id": "444",
+    "name": "蓝色|L",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 10
+  },{
+    "sku_id": "555",
+    "name": "紫色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 4
+  },{
+    "sku_id": "666",
+    "name": "紫色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "777",
+    "name": "紫色|XL",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 10
+  }]
+},{
+  "product_id": "123123125",
+  "title": "2017夏季连衣裙2",
+  "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+  "orig_price": "800.0¥",
+  "curr_price": "580.0¥",
+  "attrs": [{
+    "sku_id": "111",
+    "name": "绿色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "222",
+    "name": "绿色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "333",
+    "name": "蓝色|M",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 8
+  },{
+    "sku_id": "444",
+    "name": "蓝色|L",
+    "image_url": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+    "inventory": 10
+  },{
+    "sku_id": "555",
+    "name": "紫色|S",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 4
+  },{
+    "sku_id": "666",
+    "name": "紫色|M",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 5
+  },{
+    "sku_id": "777",
+    "name": "紫色|XL",
+    "image_url": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+    "inventory": 10
+  }]
+}]

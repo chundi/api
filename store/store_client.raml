@@ -1,5 +1,5 @@
 #%RAML 1.0
-title: Galaxy-solar gstar API
+title: Galaxy-solar store Client API
 version: v1
 baseUri: http://localhost/{version}/
 mediaType: application/json
@@ -7,14 +7,14 @@ mediaType: application/json
 uses:
   meta: ./types/meta.raml
   space: ./types/space.raml
-  trait: ./traits/traits.raml
+  trait: ../public/traits/traits.raml
 
 resourceTypes:
   collection: !include ./resourceTypes/collection.raml
   item: !include ./resourceTypes/item.raml
 
 /spaces:
-  displayName: space management
+  displayName: space client
   /{space_type}:
     displayName: specific space type management
     uriParameters:
@@ -29,7 +29,6 @@ resourceTypes:
         exampleItem: !include ./examples/space_item.post.example
     get:
       is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
-    post:
   /{space_id}:
     uriParameters:
       space_id: string
@@ -37,9 +36,21 @@ resourceTypes:
       item:
         request-type: space.Space
         response-type: space.Space
-        exampleItem: !include ./examples/space_item.get.example
-        exampleItemPut: !include ./examples/space_item.post.example
-        exampleItemDelete: !include ./examples/space_item.post.example
+        exampleItem: !include ./examples/space_item_simple.get.example
     get:
-    put:
-    delete:
+    /transfer:
+      displayName: call a waiter to serve the customer in the fittingroom
+      post:
+        body:
+          application/json:
+            type: object
+            properties:
+              sku_ids:
+                type: string[]
+                description: sku identifier list
+        responses:
+          200:
+            body:
+              application/json:
+                example: |
+                  { "message": "we have notify the waitresses, please wait" }
