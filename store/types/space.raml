@@ -4,34 +4,15 @@ usage: Space types specifics
 
 uses:
   product: product.raml
+  base: ../../public/types/base.raml
 
 types:
   Space:
-    type: object
+    type: base.Base
     properties:
-      id: string
-      type: string
-      name: string
-      status: string
-      slug?: nil | string
-      title?: nil | string
-      description?: nil | string
-      content?: nil | string | Content
-      parent_id?: nil | string
-      created_at?: datetime
-        #type: datetime
-        #format: rfc3339
-        #example: 2016-02-28T16:41:41.090Z
-        #type: datetime
-        #format: rfc2616
-        #example: Sun, 28 Feb 2016 16:41:41 GMT
-      updated_at?: datetime
-      deleted_at?: datetime
-      published_at?: datetime
+      author_id: string
 
-  Content:
-    type: object
   FittingRoom:
-    type: Content
+    type: base.Content
     properties:
       items: nil | product.Product[]
