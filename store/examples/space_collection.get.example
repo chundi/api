@@ -1,5 +1,6 @@
 [{
   "id": "be126816-8632-11e7-8664-600308a19290",
+  "author_id": "c73d688c-8632-11e7-b4d8-600308a19290",
   "type": "fitting_room",
   "name": "第一试衣间",
   "slug": "fitting_room_1",
@@ -16,6 +17,7 @@
   "deleted_at": "2016-02-28T16:41:41.090Z"
 }, {
   "id": "c73d688c-8632-11e7-b4d7-600308a19290",
+  "author_id": "c73d688c-8632-11e7-b4d8-600308a19290",
   "type": "fitting_room",
   "name": "第二试衣间",
   "slug": "fitting_room_2",
@@ -158,6 +160,7 @@
   "deleted_at": "2016-02-28T16:41:41.090Z"
 },{
   "id": "ed48b300-8633-11e7-9e67-600308a19290",
+  "author_id": "c73d688c-8632-11e7-b4d8-600308a19290",
   "type": "fitting_room",
   "name": "第三试衣间",
   "slug": "",
