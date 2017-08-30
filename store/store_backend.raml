@@ -8,6 +8,8 @@ uses:
   meta: ./types/meta.raml
   space: ./types/space.raml
   trait: ../public/traits/traits.raml
+  sku: ./types/sku.raml
+  device: ./types/device.raml
 
 resourceTypes:
   collection: !include ../public/resourceTypes/collection.raml
@@ -28,8 +30,10 @@ resourceTypes:
         exampleCollection: !include ./examples/space_collection_simple.get.example
         exampleItem: !include ./examples/space_item.post.example
     get:
+      description: 获取对应类型所有的space，比如试衣间
       is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
     post:
+      description: 添加一个试衣间（或根据type区分是什么类型的space）
   /{space_id}:
     uriParameters:
       space_id: string
@@ -41,6 +45,31 @@ resourceTypes:
         exampleItemPut: !include ./examples/space_item.post.example
         exampleItemDelete: !include ./examples/space_item.post.example
     get:
+      description: 获取试衣间详情（返回数据包括已送入试衣间的单品图片）
     put:
       description: backend update; RFID scan
+    delete:
+    /skus:
+      type:
+        collection:
+          response-type: sku.Sku
+          exampleCollection: !include ./examples/space_dressing_sku.get.example
+          request-type: string
+          exampleItem: json
+      get:
+        description: 获取指定试衣间里所有的单品信息（包括单品其他尺码、颜色等数据）
+      post:
+        description: 用户指定换送衣服接口
+
+
+/devices:
+  /{device_type}:
+    type:
+       collection:
+         response-type: device.Device
+         exampleCollection: !include ./examples/space_device.get.example
+         request-type: device.Device
+         exampleItem: !include ./examples/space_device.post.example
+    get:
+    post:
     delete:

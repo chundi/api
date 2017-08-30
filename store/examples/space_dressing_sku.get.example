@@ -1,0 +1,44 @@
+[
+    {
+      "product_id": "4320939",
+      "title": "夏季连衣裙",
+      "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+      "orig_price": "234.56",
+      "curr_price": "123.45",
+      "attrs": [
+        {
+            "sku_id": "123",
+            "name": "2017夏季连衣裙",
+            "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+            "inventory": 10
+        },
+        {
+            "sku_id": "124",
+            "name": "2018夏季连衣裙",
+            "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+            "inventory": 12
+        }
+      ]
+    },
+    {
+      "product_id": "4320940",
+      "title": "冬季连衣裙",
+      "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+      "orig_price": "777.77",
+      "curr_price": "666.66",
+      "attrs": [
+        {
+            "sku_id": "125",
+            "name": "2017夏季连衣裙",
+            "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+            "inventory": 11
+        },
+        {
+            "sku_id": "126",
+            "name": "2018夏季连衣裙",
+            "image_url": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg",
+            "inventory": 13
+        }
+      ]
+    }
+]
