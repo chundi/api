@@ -1,0 +1,69 @@
+#%RAML 1.0
+title: Galaxy-solar Authorization API
+version: v1
+baseUri: http://localhost/{version}/
+mediaType: application/json
+
+uses:
+  entity: ./types/entity.raml
+  user: ./types/user.raml
+  trait: ../public/traits/traits.raml
+
+resourceTypes:
+  collection: !include ../public/resourceTypes/collection.raml
+  item: !include ../public/resourceTypes/item.raml
+
+securitySchemes:
+  jwt: !include ../public/securitySchemas/jwt.raml
+
+securedBy: jwt #[jwt, Oauth_2: { scopes: [Administrator] }
+
+/entities:
+  displayName: entity management
+  type:
+    collection:
+      response-type: entity.Entity
+      request-type: entity.Entity
+      exampleCollection: !include ./examples/auth_entity_collection_simple.get.example
+      exampleItem: !include ./examples/auth_entity_item.post.example
+  get:
+    is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
+  post:
+  /{entity_id}:
+    uriParameters:
+      entity_id: string
+    type:
+      item:
+        response-type: entity.Entity
+        request-type: entity.Entity
+        exampleItem: !include ./examples/auth_entity_item.get.example
+        exampleItemPut: !include ./examples/auth_entity_item.post.example
+        exampleItemDelete: !include ../public/examples/simple_id.example
+    get:
+    put:
+    delete:
+
+/users:
+  displayName: entity management
+  type:
+    collection:
+      response-type: user.User
+      request-type: user.User
+      exampleCollection: !include ./examples/auth_user_collection_simple.get.example
+      exampleItem: !include ./examples/auth_user_item.post.example
+  get:
+    is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
+  post:
+  /{user_id}:
+    uriParameters:
+      user_id: string
+    type:
+      item:
+        response-type: user.User
+        request-type: user.User
+        exampleItem: !include ./examples/auth_user_item.get.example
+        exampleItemPut: !include ./examples/auth_user_item.post.example
+        exampleItemDelete: !include ../public/examples/simple_id.example
+    get:
+    put:
+    delete:

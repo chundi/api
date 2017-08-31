@@ -1,0 +1,15 @@
+#%RAML 1.0 SecurityScheme
+
+type: x-jwt
+description: Json Web Token
+describedBy:
+  headers:
+    Authorization:
+      type: string
+      description: |
+        Bearer token. Do not use with the "access_token" query string parameter.
+  queryParameters:
+    access_token:
+      type: string
+      description: |
+        Bearer token. Do not use with the "Authorization" header.
