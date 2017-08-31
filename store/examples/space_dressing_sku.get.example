@@ -1,0 +1,140 @@
+[
+    {
+        "product_id": "4320939",
+        "title": "夏季连衣裙",
+        "orig_price": "234.56",
+        "curr_price": "123.45",
+        "selected": "蓝色-X",
+        "colors": ["蓝色", "紫色", "绿色"],
+        "sizes": ["M", "X", "XL", "XXL"],
+        "color_imgs": {
+            "蓝色": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+            "紫色": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+            "绿色": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg"
+        },
+        "skus": {
+            "蓝色-M": {
+                "sku_id": "123",
+                "inventory": 11,
+                "color": "蓝色",
+                "size": "M"
+            },
+            "蓝色-X": {
+                "sku_id": "124",
+                "inventory": 3,
+                "color": "蓝色",
+                "size": "X"
+            },
+            "紫色-M": {
+                "sku_id": "125",
+                "inventory": 7,
+                "color": "紫色",
+                "size": "M"
+            },
+            "紫色-X": {
+                "sku_id": "126",
+                "inventory": 1,
+                "color": "紫色",
+                "size": "X"
+            },
+            "紫色-XL": {
+                "sku_id": "127",
+                "inventory": 11,
+                "color": "紫色",
+                "size": "XL"
+            },
+            "紫色-XXL": {
+                "sku_id": "128",
+                "inventory": 11,
+                "color": "紫色",
+                "size": "XXL"
+            },
+            "绿色-XL": {
+                "sku_id": "129",
+                "inventory": 0,
+                "color": "绿色",
+                "size": "XL"
+            }
+        },
+        "color_pairs": {
+            "蓝色": ["M", "X"],
+            "紫色": ["M", "X", "XL", "XXL"],
+            "绿色": ["XL"]
+        },
+        "size_pairs": {
+            "M": ["蓝色", "紫色"],
+            "X": ["蓝色", "紫色"],
+            "XL": ["紫色", "绿色"],
+            "XXL": ["紫色"]
+        }
+    },
+    {
+        "product_id": "4320940",
+        "title": "夏季连衣裙",
+        "orig_price": "345.67",
+        "curr_price": "344.13",
+        "selected": "紫色-XXL",
+        "colors": ["蓝色", "紫色", "绿色"],
+        "sizes": ["M", "X", "XL", "XXL"],
+        "color_imgs":{
+            "蓝色": "http://d05.res.meilishuo.net/picdetail/a/7f/8f/d4662819b357ccc47b639991cdd0_602_716_1_1.ca.jpeg",
+            "紫色": "http://img4.imgtn.bdimg.com/it/u=3477647239,772378887&fm=26&gp=0.jpg",
+            "绿色": "http://img4.imgtn.bdimg.com/it/u=3570158983,3488252931&fm=214&gp=0.jpg"
+        },
+        "skus": {
+            "蓝色-M": {
+                "sku_id": "223",
+                "inventory": 11,
+                "color": "蓝色",
+                "size": "M"
+            },
+            "蓝色-X": {
+                "sku_id": "224",
+                "inventory": 3,
+                "color": "蓝色",
+                "size": "X"
+            },
+            "紫色-M": {
+                "sku_id": "225",
+                "inventory": 7,
+                "color": "紫色",
+                "size": "M"
+            },
+            "紫色-X": {
+                "sku_id": "226",
+                "inventory": 1,
+                "color": "紫色",
+                "size": "X"
+            },
+            "紫色-XL": {
+                "sku_id": "227",
+                "inventory": 11,
+                "color": "紫色",
+                "size": "XL"
+            },
+            "紫色-XXL": {
+                "sku_id": "228",
+                "inventory": 11,
+                "color": "紫色",
+                "size": "XXL"
+            },
+            "绿色-XL": {
+                "sku_id": "229",
+                "inventory": 0,
+                "color": "绿色",
+                "size": "XL"
+            }
+        },
+        "color_pairs": {
+            "蓝色": ["M", "X"],
+            "紫色": ["M", "X", "XL", "XXL"],
+            "绿色": ["XL"]
+        },
+        "size_pairs": {
+            "M": ["蓝色", "紫色"],
+            "X": ["蓝色", "紫色"],
+            "XL": ["紫色", "绿色"],
+            "XXL": ["紫色"]
+        }
+    }
+]
