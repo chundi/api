@@ -1,0 +1,114 @@
+# 换衣申请（试衣间设备发往服务器）
+{
+    "id": 1,
+    "type": "req_exchange",
+    "body": {
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19291"
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290"
+    }
+}
+
+# 换衣申请（服务器发往手持设备）
+{
+    "id": 1,
+    "type": "req_exchange",
+    "body": {
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19291",
+        "space": 3
+    }
+}
+
+# 服务器回执（服务器返回给设备的消息，说明id为1的消息已经收到了）
+{
+    "id": 1,
+    "type": "server_ack",
+    "body": {
+        "result": "ok",         # ok, error
+        "message": ""           # error会给错误信息
+    }
+}
+
+# 设备回执（设备返回给服务器的消息，说明id为1的消息已经收到了）
+{
+    "id": 1,
+    "type": "client_ack",
+    "body": {
+        "result": "ok",         # ok, error
+        "message": ""           # error会给错误信息
+    }
+}
+
+# 换衣响应（手持设备发往服务器，服务器转发到试衣间设备）
+{
+    "id": 1,
+    "type": "rsp_exchange",
+    "body": {
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+        "status": "soldout"     # soldout, delivering, delivered
+    }
+}
+
+# 请求试衣间列表（手持设备发往服务器，要求列出所有试衣间及关联状态）
+{
+    "id": 1,
+    "type": "ls_space",
+    "body": {
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19292",
+        "space_type": "dressing_room"
+    }
+}
+
+# 返回所有试衣间（服务器发往手持设备）
+{
+    "id": 1,
+    "type": "server_ack",
+    "body": {
+        "spaces": [
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "bound"
+            },
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "unbound"
+            },
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "unbound"
+            },
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "unbound"
+            },
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "unbound"
+            },
+            {
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
+                "space": 1,
+                "status": "unbound"
+            }
+        ]
+    }
+}
+
+# 关联试衣间（手持设备发往服务器，用于关联选定的试衣间，要不要加员工id还没想好。。。）
+{
+    "id": 1,
+    "type": "bind_space",
+    "body": {
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19296",
+        "spaces": [
+            "c73d688c-8632-11e7-b4d7-600308a19293",
+            "c73d688c-8632-11e7-b4d7-600308a19294",
+            "c73d688c-8632-11e7-b4d7-600308a19295",
+        ]
+    }
+}
