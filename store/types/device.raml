@@ -3,16 +3,11 @@
 usage: Space types specifics
 
 uses:
-  sku: sku.raml
   base: ../../public/types/base.raml
 
 types:
-  Space:
+  Device:
     type: base.Base
     properties:
+      device_id: string
       owner_id: string
-
-  FittingRoom:
-    type: base.Content
-    properties:
-      items: nil | product.Product[]
