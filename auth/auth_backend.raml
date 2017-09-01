@@ -27,6 +27,8 @@ securedBy: jwt #[jwt, Oauth_2: { scopes: [Administrator] }
       exampleCollection: !include ./examples/auth_entity_collection_simple.get.example
       exampleItem: !include ./examples/auth_entity_item.post.example
   get:
+    queryParameters:
+      entity_type?: string
     is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
   post:
   /{entity_id}:
@@ -52,6 +54,8 @@ securedBy: jwt #[jwt, Oauth_2: { scopes: [Administrator] }
       exampleCollection: !include ./examples/auth_user_collection_simple.get.example
       exampleItem: !include ./examples/auth_user_item.post.example
   get:
+    queryParameters:
+      user_type?: string
     is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
   post:
   /{user_id}:
