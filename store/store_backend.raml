@@ -16,24 +16,22 @@ resourceTypes:
   item: !include ../public/resourceTypes/item.raml
 
 /spaces:
-  displayName: space management
-  /{space_type}:
-    displayName: specific space type management
-    uriParameters:
-      space_type:
+  displayName: specific space type management
+  type:
+    collection:
+      request-type: space.Space
+      response-type: space.Space
+      exampleCollection: !include ./examples/space_collection_simple.get.example
+      exampleItem: !include ./examples/space_item.post.example
+  get:
+    queryParameters:
+      space_type?:
         type: string
         description: filter for space.type
-    type:
-      collection:
-        request-type: space.Space
-        response-type: space.Space
-        exampleCollection: !include ./examples/space_collection_simple.get.example
-        exampleItem: !include ./examples/space_item.post.example
-    get:
-      description: 获取对应类型所有的space，比如试衣间
-      is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
-    post:
-      description: 添加一个试衣间（或根据type区分是什么类型的space）
+    description: 获取对应类型所有的space，比如试衣间
+    is: [ trait.pageable, trait.sortable, trait.partial, trait.filterable ]
+  post:
+    description: 添加一个试衣间（或根据type区分是什么类型的space）
   /{space_id}:
     uriParameters:
       space_id: string
@@ -63,13 +61,14 @@ resourceTypes:
 
 
 /devices:
-  /{device_type}:
-    type:
-       collection:
-         response-type: device.Device
-         exampleCollection: !include ./examples/space_device.get.example
-         request-type: device.Device
-         exampleItem: !include ./examples/space_device.post.example
-    get:
-    post:
-    delete:
+  type:
+     collection:
+       response-type: device.Device
+       exampleCollection: !include ./examples/space_device.get.example
+       request-type: device.Device
+       exampleItem: !include ./examples/space_device.post.example
+  get:
+    queryParameters:
+      device_type?: string
+  post:
+  delete:
