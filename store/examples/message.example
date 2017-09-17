@@ -3,8 +3,8 @@
     "id": 1,
     "type": "req_exchange",
     "body": {
-        "device_id": "c73d688c-8632-11e7-b4d7-600308a19291"
-        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290"
+        "main_id": "c73d688c-8632-11e7-b4d7-600308a19290",      # 显示的主单品
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290"        # 请求更新的单品货号
     }
 }
 
@@ -13,9 +13,10 @@
     "id": 1,
     "type": "req_exchange",
     "body": {
-        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-        "device_id": "c73d688c-8632-11e7-b4d7-600308a19291",
-        "space": 3
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19291",    # 申请换衣的设备ID
+        "main_id": "c73d688c-8632-11e7-b4d7-600308a19290",      # 试衣间显示的哪个单品，店员查找单品时用不到，需要在换衣响应的消息里一起传回去
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",       # 请求更换的单品货号
+        "space": "3"                                            # 哪个试衣间
     }
 }
 
@@ -44,8 +45,10 @@
     "id": 1,
     "type": "rsp_exchange",
     "body": {
-        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-        "status": "soldout"     # soldout, delivering, delivered
+        "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",        # 换衣请求消息里带的那个device_id，需要一起传回去，用于服务器判断是哪台设备发的换衣请求
+        "main_id": "c73d688c-8632-11e7-b4d7-600308a19290",          # 换衣申请消息里的main_id，不做修改直接回传
+        "sku_id": "c73d688c-8632-11e7-b4d7-600308a19290",           # 请求更换的单品货号，不做修改直接回传
+        "status": "soldout"                                         # 单品状态。soldout, delivering, delivered
     }
 }
 
@@ -54,8 +57,7 @@
     "id": 1,
     "type": "ls_space",
     "body": {
-        "device_id": "c73d688c-8632-11e7-b4d7-600308a19292",
-        "space_type": "dressing_room"
+        "space_type": "dressing_room"                               # 请求列出的空间类型
     }
 }
 
@@ -66,33 +68,33 @@
     "body": {
         "spaces": [
             {
-                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
-                "status": "bound"
+                "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",    # 空间设备ID
+                "space": "1",                                           # 空间名字
+                "status": "bound"                                       # 绑定状态
             },
             {
                 "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
+                "space": "2",
                 "status": "unbound"
             },
             {
                 "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
+                "space": "3",
                 "status": "unbound"
             },
             {
                 "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
+                "space": "1",
                 "status": "unbound"
             },
             {
                 "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
+                "space": "1",
                 "status": "unbound"
             },
             {
                 "device_id": "c73d688c-8632-11e7-b4d7-600308a19290",
-                "space": 1,
+                "space": "1",
                 "status": "unbound"
             }
         ]
@@ -104,7 +106,6 @@
     "id": 1,
     "type": "bind_space",
     "body": {
-        "device_id": "c73d688c-8632-11e7-b4d7-600308a19296",
         "spaces": [
             "c73d688c-8632-11e7-b4d7-600308a19293",
             "c73d688c-8632-11e7-b4d7-600308a19294",
