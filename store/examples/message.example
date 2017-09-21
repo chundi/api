@@ -20,20 +20,10 @@
     }
 }
 
-# 服务器回执（服务器返回给设备的消息，说明id为1的消息已经收到了）
+# 回执消息（说明id为1的消息已经收到了）
 {
     "id": 1,
-    "type": "server_ack",
-    "body": {
-        "result": "ok",         # ok, error
-        "message": ""           # error会给错误信息
-    }
-}
-
-# 设备回执（设备返回给服务器的消息，说明id为1的消息已经收到了）
-{
-    "id": 1,
-    "type": "client_ack",
+    "type": "ack",
     "body": {
         "result": "ok",         # ok, error
         "message": ""           # error会给错误信息
